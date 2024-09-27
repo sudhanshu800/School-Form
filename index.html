@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration Form</title>
+</head>
+<body>
+    <h1>School Registration Form</h1>
+    <form action="/sumbit" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+            <label for="last-name">LastName:</label>
+            <input type="text" id="last-name" name="last-name" required><br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+
+        <legend>Course Information</legend>
+        <label for="grade">Grade Level:</label>
+        <select name="grade" id="grade" required>
+
+            <option value="grade-1">Grade 1</option>
+            <option value="grade-1">Grade 2</option>
+            <option value="grade-1">Grade 3</option>
+        </select><br><br>
+
+        <label for="subjects">Select Subject</label><br>
+        <input type="checkbox" id="Science">
+        <label for="science">Science</label>
+
+        <input type="checkbox" id="biology" name="subjects" value="biology">
+        <label for="biology">Biology</label>
+
+        <input type="checkbox" id="arts" name="subjects" value="arts">
+        <label for="arts">Arts</label><br><br>
+   
+    </fieldset>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+
+    
+</body>
+</html>
